@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adnan Kaisar — Computer Science student, Python learner, aspiring Data Analyst. View projects, skills, and certifications.">
+
+  <title>Adnan Kaisar | Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Particle background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Mobile overlay -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- ======================== NAVBAR ======================== -->
+  <nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero" id="home">
+    <div class="hero-box">
+      <div class="hero-image" id="hero-img-trigger" style="cursor:pointer;">
+        <img src="myimage.jpeg" alt="Adnan Kaisar">
+      </div>
+
+      <h1>Adnan Kaisar</h1>
+      <div class="typed-wrapper"><span class="typing"></span></div>
+
+      <div class="buttons">
+        <a href="https://github.com/AdnanKaisar" target="_blank" class="btn btn-primary">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/adnan-kaisar-333622292" target="_blank" class="btn btn-outline">
+          <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== ABOUT ======================== -->
+  <section id="about">
+    <div class="section-header reveal">
+      <h2>About Me</h2>
+      <span class="divider"></span>
+    </div>
+
+    <div class="glass about-content reveal">
+      <p>
+        I am a passionate <strong>Computer Science enthusiast</strong> with a strong interest in
+        <strong>Data Science, Artificial Intelligence, and software development</strong>.
+      </p>
+      <p>
+        My technical skill set includes <strong>Python, HTML, CSS, and JavaScript</strong>,
+        along with data analysis libraries such as <strong>Pandas and NumPy</strong>.
+      </p>
+      <p>
+        I hold the <strong>ServiceNow Certified Implementation Specialist – Data Foundations (CIS-DF)</strong>
+        certification and completed an internship at <strong>NIT Srinagar</strong>.
+      </p>
+      <p>
+        My minor specialization is in <strong>Artificial Intelligence and Machine Learning</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======================== SKILLS ======================== -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <h2>Skills</h2>
+      <span class="divider"></span>
+    </div>
+
+    <div class="skills-grid stagger-children reveal">
+      <h3 class="skills-category-title">Languages</h3>
+
+      <div class="skill-card">
+        <i class="fab fa-html5"></i>
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar"><div class="skill-fill" data-level="90%"></div></div>
+        <div class="skill-percent">90%</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-css3-alt"></i>
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar"><div class="skill-fill" data-level="85%"></div></div>
+        <div class="skill-percent">85%</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-js-square"></i>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar"><div class="skill-fill" data-level="40%"></div></div>
+        <div class="skill-percent">40%</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-python"></i>
+        <div class="skill-name">Python</div>
+        <div class="skill-bar"><div class="skill-fill" data-level="70%"></div></div>
+        <div class="skill-percent">70%</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-code"></i>
+        <div class="skill-name">C / C++</div>
+        <div class="skill-bar"><div class="skill-fill" data-level="55%"></div></div>
+        <div class="skill-percent">55%</div>
+      </div>
+    </div>
+
+    <div class="skills-grid stagger-children reveal">
+      <h3 class="skills-category-title">Libraries & Frameworks</h3>
+
+      <div class="skill-card">
+        <i class="fas fa-chart-line"></i>
+        <div class="skill-name">Pandas</div>
+        <div class="skill-bar"><div class="skill-fill" data-level="65%"></div></div>
+        <div class="skill-percent">65%</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-square-root-variable"></i>
+        <div class="skill-name">NumPy</div>
+        <div class="skill-bar"><div class="skill-fill" data-level="60%"></div></div>
+        <div class="skill-percent">60%</div>
+      </div>
+    </div>
+
+    <div class="skills-grid stagger-children reveal">
+      <h3 class="skills-category-title">Tools</h3>
+
+      <div class="skill-card">
+        <i class="fas fa-laptop-code"></i>
+        <div class="skill-name">VS Code</div>
+        <div class="skill-bar"><div class="skill-fill" data-level="85%"></div></div>
+        <div class="skill-percent">85%</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-git-alt"></i>
+        <div class="skill-name">Git</div>
+        <div class="skill-bar"><div class="skill-fill" data-level="60%"></div></div>
+        <div class="skill-percent">60%</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-github"></i>
+        <div class="skill-name">GitHub</div>
+        <div class="skill-bar"><div class="skill-fill" data-level="65%"></div></div>
+        <div class="skill-percent">65%</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-file-word"></i>
+        <div class="skill-name">MS Word</div>
+        <div class="skill-bar"><div class="skill-fill" data-level="80%"></div></div>
+        <div class="skill-percent">80%</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-film"></i>
+        <div class="skill-name">VN Editor</div>
+        <div class="skill-bar"><div class="skill-fill" data-level="75%"></div></div>
+        <div class="skill-percent">75%</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PROJECTS ======================== -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <h2>Projects</h2>
+      <span class="divider"></span>
+    </div>
+
+    <div class="cards-grid stagger-children reveal">
+      <div class="card">
+        <h3>Personal Portfolio Website</h3>
+        <p>Modern responsive portfolio built using HTML, CSS and JavaScript with glassmorphism design.</p>
+        <a href="https://github.com/AdnanKaisar" target="_blank" class="card-link">
+          View on GitHub <i class="fas fa-arrow-right"></i>
+        </a>
+        <span class="card-tag">HTML / CSS / JS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== EDUCATION ======================== -->
+  <section id="education">
+    <div class="section-header reveal">
+      <h2>Education</h2>
+      <span class="divider"></span>
+    </div>
+
+    <div class="cards-grid stagger-children reveal">
+      <div class="card">
+        <h3>B.Tech in Computer Science Engineering</h3>
+        <p>2023 – 2027</p>
+        <p>Model Institute of Engineering and Technology, Jammu</p>
+        <span class="card-tag">Undergraduate</span>
+      </div>
+
+      <div class="card">
+        <h3>12th Standard – Non Medical</h3>
+        <p>2022</p>
+        <p>Govt. Higher Secondary School Shangus, Anantnag</p>
+        <span class="card-tag">Senior Secondary</span>
+      </div>
+
+      <div class="card">
+        <h3>10th Standard</h3>
+        <p>2020</p>
+        <p>Iqra Public Secondary School Khundru Achabal, Anantnag</p>
+        <span class="card-tag">Secondary</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== EXPERIENCE ======================== -->
+  <section id="experience">
+    <div class="section-header reveal">
+      <h2>Experience</h2>
+      <span class="divider"></span>
+    </div>
+
+    <div class="glass experience-content reveal">
+      <div class="exp-header">
+        <div class="exp-icon"><i class="fas fa-microchip"></i></div>
+        <div>
+          <h3>IoT Intern – NIT Srinagar</h3>
+          <span class="exp-date">July 2025</span>
+        </div>
+      </div>
+
+      <ul>
+        <li>Developed sensor-based monitoring systems</li>
+        <li>Integrated IoT devices with cloud platforms</li>
+        <li>Implemented communication protocols</li>
+        <li>Tested embedded system performance</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================== CERTIFICATIONS ======================== -->
+  <section id="certifications">
+    <div class="section-header reveal">
+      <h2>Certifications</h2>
+      <span class="divider"></span>
+    </div>
+
+    <div class="cards-grid stagger-children reveal">
+      <a href="https://drive.google.com/file/d/1BkjvIGRoU07gOn2_VEse98tb5J2zqqf9/view" target="_blank" class="cert-link">
+        <div class="card">
+          <h3>ServiceNow CIS – Data Foundations</h3>
+          <p>Organization: ServiceNow</p>
+          <p>Issued: February 2025</p>
+          <span class="card-tag">ServiceNow</span>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1CpgdFXjL4K1nnSyU6Hnrga5Mm2q7YYJf/view" target="_blank" class="cert-link">
+        <div class="card">
+          <h3>Python for Data Science, AI & Development</h3>
+          <p>Organization: IBM</p>
+          <p>Issued: February 2025</p>
+          <span class="card-tag">IBM</span>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1yHyDgQjSFXBAS0LciiTLwsMeqOXJnrcq/view" target="_blank" class="cert-link">
+        <div class="card">
+          <h3>Introduction to HTML, CSS & JavaScript</h3>
+          <p>Organization: IBM</p>
+          <p>Issued: November 2024</p>
+          <span class="card-tag">IBM</span>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1-h-zVhFIiiLbo82Ekl0bMOAtKG-OVmRb/view" target="_blank" class="cert-link">
+        <div class="card">
+          <h3>AI & ML on Google Cloud</h3>
+          <p>Organization: Google Cloud Skills Boost</p>
+          <p>Issued: November 2025</p>
+          <span class="card-tag">Google Cloud</span>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1-1qtUOdy0Tojd6MiWqRCM3QouqXoaqH2/view?usp=drive_link" target="_blank" class="cert-link">
+        <div class="card">
+          <h3>Build, Train and Deploy ML Models with Keras on Google Cloud</h3>
+          <p>Organization: Google Cloud</p>
+          <p>Issued: November 2025</p>
+          <span class="card-tag">Google Cloud</span>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1guJ1v8VL8shEpIqOtDZlhFzC5OTfE02Y/view?usp=sharing" target="_blank" class="cert-link">
+        <div class="card">
+          <h3>Feature Engineering</h3>
+          <p>Organization: Google Cloud</p>
+          <p>Issued: November 2025</p>
+          <span class="card-tag">Google Cloud</span>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1lpQAYdO5xUFV3reon7mztLgJG1kkiLyq/view?usp=drive_link" target="_blank" class="cert-link">
+        <div class="card">
+          <h3>Machine Learning in the Enterprise</h3>
+          <p>Organization: Google Cloud</p>
+          <p>Issued: November 2025</p>
+          <span class="card-tag">Google Cloud</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <h2>Contact</h2>
+      <span class="divider"></span>
+    </div>
+
+    <div class="contact-grid stagger-children reveal">
+      <div class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <p>Email</p>
+        <a href="mailto:adnankaisar112@gmail.com">adnankaisar112@gmail.com</a>
+      </div>
+
+      <div class="contact-card">
+        <i class="fas fa-phone"></i>
+        <p>Phone</p>
+        <a href="tel:+917780946112">+91 7780946112</a>
+      </div>
+
+      <div class="contact-card">
+        <i class="fab fa-github"></i>
+        <p>GitHub</p>
+        <a href="https://github.com/AdnanKaisar" target="_blank">github.com/AdnanKaisar</a>
+      </div>
+
+      <div class="contact-card">
+        <i class="fab fa-linkedin"></i>
+        <p>LinkedIn</p>
+        <a href="https://www.linkedin.com/in/adnan-kaisar-333622292" target="_blank">LinkedIn Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer>
+    <p>© 2026 <span class="footer-accent">Adnan Kaisar</span>. All Rights Reserved.</p>
+    <p>Designed by Adnan Kaisar</p>
+  </footer>
+
+  <!-- Image lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img src="myimage.jpeg" alt="Adnan Kaisar">
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
