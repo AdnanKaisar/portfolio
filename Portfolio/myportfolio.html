@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Adnan Kaisar — Computer Science student, Python learner, aspiring Data Analyst. View projects, skills, and certifications.">
+  <title>Adnan Kaisar | Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ======================== INTRO SCREEN ======================== -->
+  <div id="intro-screen" class="intro-screen">
+    <div class="logo-intro">ADNAN</div>
+    <h1>Who's watching?</h1>
+    <div class="profiles">
+      <div class="profile" onclick="enterPortfolio('Recruiter')">
+        <div class="avatar recruiter-avatar" style="background:transparent; border:none;">
+          <svg viewBox="0 0 100 100" width="100%" height="100%">
+            <rect width="100" height="100" rx="10" fill="#2d82e6" />
+            <circle cx="35" cy="45" r="6" fill="white" />
+            <circle cx="65" cy="45" r="6" fill="white" />
+            <path d="M 35 65 Q 50 80 65 65" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" />
+          </svg>
+        </div>
+        <span class="profile-name">Recruiter</span>
+      </div>
+      <div class="profile" onclick="enterPortfolio('Lost Kid')">
+        <div class="avatar dev-avatar" style="background:transparent; border:none;">
+          <svg viewBox="0 0 100 100" width="100%" height="100%">
+            <rect width="100" height="100" rx="10" fill="#e50914" />
+            <circle cx="35" cy="45" r="6" fill="white" />
+            <circle cx="65" cy="45" r="6" fill="white" />
+            <path d="M 35 65 Q 50 80 65 65" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" />
+          </svg>
+        </div>
+        <span class="profile-name">Lost Kid</span>
+      </div>
+      <div class="profile" onclick="enterPortfolio('Stalker')">
+        <div class="avatar friend-avatar" style="background:transparent; border:none;">
+          <svg viewBox="0 0 100 100" width="100%" height="100%">
+            <rect width="100" height="100" rx="10" fill="#f4b400" />
+            <circle cx="35" cy="45" r="6" fill="white" />
+            <circle cx="65" cy="45" r="6" fill="white" />
+            <path d="M 35 65 Q 50 80 65 65" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" />
+          </svg>
+        </div>
+        <span class="profile-name">Stalker</span>
+      </div>
+      <div class="profile" onclick="enterPortfolio('Investor')">
+        <div class="avatar investor-avatar" style="background:transparent; border:none;">
+          <svg viewBox="0 0 100 100" width="100%" height="100%">
+            <rect width="100" height="100" rx="10" fill="#0f9d58" />
+            <circle cx="35" cy="45" r="6" fill="white" />
+            <circle cx="65" cy="45" r="6" fill="white" />
+            <path d="M 35 65 Q 50 80 65 65" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" />
+          </svg>
+        </div>
+        <span class="profile-name">Investor</span>
+      </div>
+    </div>
+    <div class="manage-profiles">Manage Profiles</div>
+  </div>
+
+  <!-- ======================== MAIN PORTFOLIO ======================== -->
+  <div id="main-app" class="main-app hidden">
+
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="nav-left">
+        <div class="logo">ADNAN</div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-icon"><i class="fas fa-search"></i></div>
+        <div class="nav-links-mobile">
+          <a href="#contact" style="color:white;text-decoration:none;font-weight:bold;margin-right:20px;">Contact</a>
+        </div>
+        <div class="nav-profile" onclick="exitPortfolio()" style="cursor: pointer;" title="Switch Profile">
+          <img id="nav-avatar" src="myimage.jpeg" alt="Profile"
+            onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png'">
+          <i class="fas fa-caret-down"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-logo-text" style="color: #e50914;">
+          <h2 style="font-size:3rem; font-weight:bold; letter-spacing: 2px;">Hiring? Let's Make It Easy!</h2>
+        </div>
+        <p class="hero-description" style="font-size: 1.2rem; max-width: 600px; margin-bottom: 20px;">
+          You're looking for top talent, and—surprise—it's me. Check out my projects, skills, and why I'm the perfect
+          fit.
+        </p>
+        <div class="hero-buttons">
+          <a href="ADNAN_resume.pdf" class="btn btn-play" download="ADNAN_resume.pdf"><i class="fas fa-file-download"></i> Download Resume</a>
+          <a href="https://www.linkedin.com/in/adnan-kaisar-333622292" target="_blank" class="btn btn-more"><i
+              class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-vignette"></div>
+      <div class="hero-bottom-fade"></div>
+    </section>
+
+    <!-- Content Rows -->
+    <div class="content-rows">
+
+      <!-- Top Picks (About) -->
+      <div class="row" id="about">
+        <h2 class="row-title">Top Picks for You</h2>
+        <div class="slider-wrapper">
+          <button class="slider-btn left"><i class="fas fa-chevron-left"></i></button>
+          <div class="row-container">
+            <div class="tile-top-pick" onclick="openModal('linkedin')" style="background: white;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                style="width:70px; margin-bottom: 15px;">
+              <h3
+                style="color:#0077b5; font-family:'Bebas Neue', sans-serif; font-size:1.8rem; letter-spacing:1px; text-transform:uppercase; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+                LINKEDIN</h3>
+            </div>
+
+            <div class="tile-top-pick" onclick="openModal('schedule')" style="background: #FFF1E5;">
+              <svg viewBox="0 0 24 24" width="70" height="70" fill="#f39c12" style="margin-bottom: 15px;">
+                <path
+                  d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5z" />
+              </svg>
+              <h3
+                style="color:#f39c12; font-family:'Bebas Neue', sans-serif; font-size:1.8rem; letter-spacing:1px; text-transform:uppercase; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+                SCHEDULE YOUR APPOINTMENT</h3>
+            </div>
+
+            <div class="tile-top-pick" onclick="openModal('github')" style="background: white;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                style="width:70px; margin-bottom: 15px;">
+              <h3
+                style="color:#333; font-family:'Bebas Neue', sans-serif; font-size:1.8rem; letter-spacing:1px; text-transform:uppercase; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+                GITHUB</h3>
+            </div>
+          </div>
+          <button class="slider-btn right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Projects Row -->
+      <div class="row" id="projects">
+        <h2 class="row-title">Featured Projects</h2>
+        <div class="slider-wrapper">
+          <button class="slider-btn left"><i class="fas fa-chevron-left"></i></button>
+          <div class="row-container">
+            <div class="tile tile-large" onclick="window.open('https://github.com/AdnanKaisar', '_blank')">
+              <div class="tile-img bg-red">
+                <h2>PORTFOLIO WEBSITE</h2>
+              </div>
+              <div class="tile-info">
+                <div class="tile-actions">
+                  <a href="https://github.com/AdnanKaisar" target="_blank" class="btn-circle"><i
+                      class="fas fa-play"></i></a>
+                  <button class="btn-circle outline"><i class="fas fa-plus"></i></button>
+                </div>
+                <span class="match">New Release</span> <span class="age">Web</span>
+                <p>Modern responsive portfolio with Netflix UI clone.</p>
+                <div class="tags">HTML &bull; CSS &bull; JS</div>
+              </div>
+            </div>
+            <!-- Empty tiles to show horizontal scroll if needed -->
+            <div class="tile tile-large" onclick="window.open('https://github.com/AdnanKaisar', '_blank')">
+              <div class="tile-img bg-dark">
+                <h2>DATA ANALYSIS</h2>
+              </div>
+              <div class="tile-info">
+                <div class="tile-actions">
+                  <a href="https://github.com/AdnanKaisar" target="_blank" class="btn-circle"><i
+                      class="fas fa-play"></i></a>
+                </div>
+                <span class="match">Trending</span> <span class="age">Python</span>
+                <p>Data exploration and visualization with Pandas.</p>
+                <div class="tags">Python &bull; Pandas</div>
+              </div>
+            </div>
+            <div class="tile tile-large" onclick="window.open('https://github.com/AdnanKaisar', '_blank')">
+              <div class="tile-img bg-red">
+                <h2>IOT MONITORING</h2>
+              </div>
+              <div class="tile-info">
+                <div class="tile-actions">
+                  <a href="https://github.com/AdnanKaisar" target="_blank" class="btn-circle"><i
+                      class="fas fa-play"></i></a>
+                </div>
+                <span class="match">Internship</span> <span class="age">Hardware</span>
+                <p>Sensor-based monitoring system from NIT Srinagar.</p>
+                <div class="tags">IoT &bull; Sensors</div>
+              </div>
+            </div>
+          </div>
+          <button class="slider-btn right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Skills Row -->
+      <div class="row" id="skills">
+        <h2 class="row-title">Trending Skills</h2>
+        <div class="slider-wrapper">
+          <button class="slider-btn left"><i class="fas fa-chevron-left"></i></button>
+          <div class="row-container">
+            <div class="tile tile-small">
+              <div class="tile-img"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                  style="width:50px; margin-bottom:10px;"> <span>HTML</span></div>
+              <div class="tile-info"><span class="match">90% Match</span>
+                <p>Language</p>
+              </div>
+            </div>
+            <div class="tile tile-small">
+              <div class="tile-img"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                  style="width:50px; margin-bottom:10px;"> <span>CSS</span></div>
+              <div class="tile-info"><span class="match">85% Match</span>
+                <p>Language</p>
+              </div>
+            </div>
+            <div class="tile tile-small">
+              <div class="tile-img"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                  style="width:50px; margin-bottom:10px;"> <span>Python</span></div>
+              <div class="tile-info"><span class="match">70% Match</span>
+                <p>Language</p>
+              </div>
+            </div>
+            <div class="tile tile-small">
+              <div class="tile-img"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                  style="width:50px; margin-bottom:10px;"> <span>C/C++</span></div>
+              <div class="tile-info"><span class="match">55% Match</span>
+                <p>Language</p>
+              </div>
+            </div>
+            <div class="tile tile-small">
+              <div class="tile-img"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                  style="width:50px; margin-bottom:10px;"> <span>JavaScript</span></div>
+              <div class="tile-info"><span class="match">40% Match</span>
+                <p>Language</p>
+              </div>
+            </div>
+            <div class="tile tile-small">
+              <div class="tile-img"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+                  style="width:50px; margin-bottom:10px;"> <span>Pandas</span></div>
+              <div class="tile-info"><span class="match">65% Match</span>
+                <p>Library</p>
+              </div>
+            </div>
+            <div class="tile tile-small">
+              <div class="tile-img"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
+                  style="width:50px; margin-bottom:10px;"> <span>NumPy</span></div>
+              <div class="tile-info"><span class="match">60% Match</span>
+                <p>Library</p>
+              </div>
+            </div>
+            <div class="tile tile-small">
+              <div class="tile-img"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+                  style="width:50px; margin-bottom:10px;"> <span>VS Code</span></div>
+              <div class="tile-info"><span class="match">85% Match</span>
+                <p>Tool</p>
+              </div>
+            </div>
+            <div class="tile tile-small">
+              <div class="tile-img"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                  style="width:50px; filter: invert(1); margin-bottom:10px;"> <span>Git & GitHub</span></div>
+              <div class="tile-info"><span class="match">65% Match</span>
+                <p>Tool</p>
+              </div>
+            </div>
+          </div>
+          <button class="slider-btn right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Certifications Row -->
+      <div class="row" id="certifications">
+        <h2 class="row-title">Certifications</h2>
+        <div class="slider-wrapper">
+          <button class="slider-btn left"><i class="fas fa-chevron-left"></i></button>
+          <div class="row-container">
+            <a href="https://drive.google.com/file/d/1BkjvIGRoU07gOn2_VEse98tb5J2zqqf9/view" target="_blank"
+              class="tile tile-med">
+              <div class="tile-img cert-bg"><img
+                  src="https://yt3.googleusercontent.com/LkCd4235_fTI6GZA4yvfafwrpL8P7kRCY9woKGcFwPyl1PCQ0vS24wfdgFgkgN462un6vY1F=s900-c-k-c0x00ffffff-no-rj"
+                  class="cert-logo"></div>
+              <div class="tile-info">
+                <h3>ServiceNow</h3>
+                <span class="match">ServiceNow CIS</span>
+                <p>Data Foundations</p>
+              </div>
+            </a>
+            <a href="https://drive.google.com/file/d/17mffkwOmt4c66jFifM_60_Q-XuGdwHhQ/view?usp=drive_link"
+              target="_blank" class="tile tile-med">
+              <div class="tile-img cert-bg"><img
+                  src="https://yt3.googleusercontent.com/LkCd4235_fTI6GZA4yvfafwrpL8P7kRCY9woKGcFwPyl1PCQ0vS24wfdgFgkgN462un6vY1F=s900-c-k-c0x00ffffff-no-rj"
+                  class="cert-logo"></div>
+              <div class="tile-info">
+                <h3>ServiceNow</h3>
+                <span class="match">Micro-Certification</span>
+                <p>Welcome to ServiceNow</p>
+              </div>
+            </a>
+            <a href="https://drive.google.com/file/d/1CpgdFXjL4K1nnSyU6Hnrga5Mm2q7YYJf/view" target="_blank"
+              class="tile tile-med">
+              <div class="tile-img cert-bg"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2dM9xatiM43ij9A-d5gg9Aj9KWXvhV1FU2w&s"
+                  class="cert-logo"></div>
+              <div class="tile-info">
+                <h3>IBM</h3>
+                <span class="match">Python for Data Science</span>
+                <p>AI & Development</p>
+              </div>
+            </a>
+            <a href="https://drive.google.com/file/d/1yHyDgQjSFXBAS0LciiTLwsMeqOXJnrcq/view" target="_blank"
+              class="tile tile-med">
+              <div class="tile-img cert-bg"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2dM9xatiM43ij9A-d5gg9Aj9KWXvhV1FU2w&s"
+                  class="cert-logo"></div>
+              <div class="tile-info">
+                <h3>IBM</h3>
+                <span class="match">HTML, CSS & JS</span>
+                <p>Introduction</p>
+              </div>
+            </a>
+            <a href="https://drive.google.com/file/d/1-h-zVhFIiiLbo82Ekl0bMOAtKG-OVmRb/view" target="_blank"
+              class="tile tile-med">
+              <div class="tile-img cert-bg"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlt_7yu87RMVF4Ap1Is1oSxxs5N7xkDw3e6w&s"
+                  class="cert-logo"></div>
+              <div class="tile-info">
+                <h3>Google Cloud</h3>
+                <span class="match">AI & ML</span>
+                <p>Cloud Skills Boost</p>
+              </div>
+            </a>
+            <a href="https://drive.google.com/file/d/1-1qtUOdy0Tojd6MiWqRCM3QouqXoaqH2/view?usp=drive_link"
+              target="_blank" class="tile tile-med">
+              <div class="tile-img cert-bg"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlt_7yu87RMVF4Ap1Is1oSxxs5N7xkDw3e6w&s"
+                  class="cert-logo"></div>
+              <div class="tile-info">
+                <h3>Google Cloud</h3>
+                <span class="match">Train & Deploy ML</span>
+                <p>Keras on Google Cloud</p>
+              </div>
+            </a>
+            <a href="https://drive.google.com/file/d/1guJ1v8VL8shEpIqOtDZlhFzC5OTfE02Y/view?usp=sharing" target="_blank"
+              class="tile tile-med">
+              <div class="tile-img cert-bg"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlt_7yu87RMVF4Ap1Is1oSxxs5N7xkDw3e6w&s"
+                  class="cert-logo"></div>
+              <div class="tile-info">
+                <h3>Google Cloud</h3>
+                <span class="match">Feature Engineering</span>
+                <p>Google Cloud</p>
+              </div>
+            </a>
+          </div>
+          <button class="slider-btn right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Education Row -->
+      <div class="row" id="education">
+        <h2 class="row-title">Education</h2>
+        <div class="slider-wrapper">
+          <button class="slider-btn left"><i class="fas fa-chevron-left"></i></button>
+          <div class="row-container">
+            <div class="tile tile-about">
+              <div class="tile-img bg-dark">
+                <h2>B.Tech CSE (2023 - 2027)</h2>
+              </div>
+              <div class="tile-info">
+                <h3>Model Institute of Engineering</h3>
+                <span class="match">2023 - 2027</span>
+                <p>Undergraduate Degree</p>
+              </div>
+            </div>
+            <div class="tile tile-about">
+              <div class="tile-img bg-red">
+                <h2>12th Standard (2022)</h2>
+              </div>
+              <div class="tile-info">
+                <h3>Govt. Higher Secondary School</h3>
+                <span class="match">2022</span>
+                <p>Non Medical</p>
+              </div>
+            </div>
+            <div class="tile tile-about">
+              <div class="tile-img bg-dark">
+                <h2>10th Standard (2020)</h2>
+              </div>
+              <div class="tile-info">
+                <h3>Iqra Public Secondary School</h3>
+                <span class="match">2020</span>
+                <p>Secondary Education</p>
+              </div>
+            </div>
+          </div>
+          <button class="slider-btn right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Contact Row -->
+      <div class="row" id="contact">
+        <h2 class="row-title">Contact</h2>
+        <div class="slider-wrapper">
+          <button class="slider-btn left"><i class="fas fa-chevron-left"></i></button>
+          <div class="row-container">
+            <a href="mailto:adnankaisar112@gmail.com" class="tile tile-small">
+              <div class="tile-img"><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
+                  style="width:50px; margin-bottom:10px;"> <span>Email</span></div>
+              <div class="tile-info"><span class="match">Connect</span>
+                <p>adnankaisar112@gmail.com</p>
+              </div>
+            </a>
+            <a href="tel:+917780946112" class="tile tile-small">
+              <div class="tile-img"><svg viewBox="0 0 24 24" width="50" height="50" fill="#34a853"
+                  style="margin-bottom:10px;">
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg> <span>Phone</span></div>
+              <div class="tile-info"><span class="match">Call</span>
+                <p>+91 7780946112</p>
+              </div>
+            </a>
+            <a href="https://github.com/AdnanKaisar" target="_blank" class="tile tile-small">
+              <div class="tile-img"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                  style="width:50px; filter: invert(1); margin-bottom:10px;"> <span>GitHub</span></div>
+              <div class="tile-info"><span class="match">Follow</span>
+                <p>github.com/AdnanKaisar</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/adnan-kaisar-333622292" target="_blank" class="tile tile-small">
+              <div class="tile-img"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                  style="width:50px; margin-bottom:10px;"> <span>LinkedIn</span></div>
+              <div class="tile-info"><span class="match">Connect</span>
+                <p>Adnan Kaisar</p>
+              </div>
+            </a>
+          </div>
+          <button class="slider-btn right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-icons">
+        <a href="https://github.com/AdnanKaisar"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/adnan-kaisar-333622292"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#">Audio Description</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Media Center</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Legal Notices</a></li>
+        <li><a href="#">Cookie Preferences</a></li>
+        <li><a href="#">Corporate Information</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <p class="service-code">Service Code</p>
+      <p>&copy; 2026 Adnan Kaisar.</p>
+    </footer>
+  </div>
+
+  <!-- Detail Modal -->
+  <div id="detail-modal" class="modal hidden">
+    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal()">&times;</button>
+      <div id="modal-img-container" class="modal-img-container">
+        <!-- Injected via JS -->
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-title">Title</h2>
+        <p id="modal-desc" class="modal-desc">Description goes here.</p>
+        <p id="modal-subdesc" class="modal-subdesc"></p>
+        <div id="modal-actions" class="modal-actions">
+          <!-- Injected via JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
