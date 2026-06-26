@@ -92,6 +92,13 @@ function enterPortfolio(profileName) {
   const heroContent = document.querySelector('.hero-content');
   const heroBg = document.querySelector('.hero-bg');
 
+  const avatarColors = {
+    'Recruiter': '#2d82e6',
+    'Lost Kid': '#e50914',
+    'Stalker': '#f4b400',
+    'Investor': '#0f9d58'
+  };
+
   if (profileName === 'Lost Kid' || profileName === 'Stalker') {
     if (heroBg) {
       heroBg.style.backgroundImage = 'url("anime_bg.png")';
@@ -111,6 +118,17 @@ function enterPortfolio(profileName) {
     if (heroContent) heroContent.classList.remove('hero-full-width');
   }
 
+  // Update the avatar in navbar based on profile chosen
+  if (navAvatar && avatarColors[profileName]) {
+    if (profileName === 'Lost Kid' || profileName === 'Stalker') {
+      const color = avatarColors[profileName];
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><rect width="100" height="100" rx="10" fill="${color}" /><circle cx="35" cy="45" r="6" fill="white" /><circle cx="65" cy="45" r="6" fill="white" /><path d="M 35 65 Q 50 80 65 65" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" /></svg>`;
+      navAvatar.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+    } else {
+      navAvatar.src = 'myimage.jpeg';
+    }
+  }
+  
   // Fade out intro
   introScreen.style.opacity = '0';
   
@@ -171,7 +189,7 @@ const modalData = {
     title: 'Schedule a Call',
     desc: 'Book a call with me to discuss potential collaborations, projects, or any queries you may have.',
     subdesc: 'Phone: +91 7780946112<br>Email: adnankaisar112@gmail.com',
-    actions: '<a href="mailto:adnankaisar112@gmail.com" class="btn btn-play" style="background: white; color: black; margin-right: 10px; text-decoration: none;"><i class="fas fa-envelope"></i> Email</a> <a href="tel:+917780946112" class="btn btn-more" style="text-decoration: none;"><i class="fas fa-phone-alt"></i> Call</a>'
+    actions: '<a href="mailto:adnankaisar112@gmail.com" class="btn btn-play" style="background: white; color: black; margin-right: 10px; text-decoration: none;"><i class="fas fa-envelope"></i> Email Me</a> <a href="tel:+917780946112" class="btn btn-more" style="text-decoration: none;"><i class="fas fa-phone-alt"></i> Call Me</a>'
   },
   github: {
     bg: 'linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.03))',
